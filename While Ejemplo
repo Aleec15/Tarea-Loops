@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ContarNumeros {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numero;
+
+        // Pedimos un número inicial
+        System.out.print("Ingresa un número entero para comenzar a contar hasta 100: ");
+        numero = scanner.nextInt();
+
+        // Si el número es mayor a 100, seguimos pidiendo hasta que sea válido
+        while (numero > 100) {
+            System.out.println("El número debe ser menor o igual a 100. Intenta de nuevo:");
+            numero = scanner.nextInt();
+        }
+
+        // Contamos desde el número ingresado hasta 100
+        while (numero <= 100) {
+            System.out.println(numero);
+            numero++;
+        }
+
+        System.out.println("¡Listo! Terminamos.");
+    }
+}
