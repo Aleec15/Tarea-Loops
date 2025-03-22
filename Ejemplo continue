@@ -1,0 +1,15 @@
+public class ParesDelUnoAlCien {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            // Si el número es impar, lo saltamos
+            if (i % 2 != 0) {
+                continue;
+            }
+
+            // Solo se imprimen los números pares
+            System.out.println(i);
+        }
+
+        System.out.println("¡Listo! Se imprimieron todos los pares del 1 al 100.");
+    }
+}
