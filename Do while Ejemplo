@@ -1,0 +1,18 @@
+public class ContadorUnoAlCien {
+    public static void main(String[] args) {
+        // Declaramos una variable llamada 'numero' y le damos el valor inicial de 1
+        int numero = 1;
+
+        // Iniciamos un ciclo do-while que se ejecutará al menos una vez
+        do {
+            // Mostramos el valor actual de 'numero' en la consola
+            System.out.println(numero);
+
+            // Aumentamos el valor de 'numero' en 1 (contador)
+            numero++;
+
+        // La condición se evalúa después de ejecutar el bloque
+        // Si 'numero' es menor o igual que 100, el ciclo se repite
+        } while (numero <= 100);
+    }
+}
